@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <!-- 必须的 meta 标签 -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap 的 CSS 文件 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- 点赞插件 -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <title>华理点评</title>
+</head>
+
+<style>
+    .input {
+        margin-top: 10px;
+
+    }
+
+    ul {
+        list-style-type: none;
+
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="row">
+
+            <!-- 导航栏 -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="./index.html">华理点评</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="./index.html">首页</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="">点评墙</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./show.html">晒一下</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">更新日志</a>
+                            </li>
+                            <!-- <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    敬请期待
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li> -->
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="敬请期待" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container">
+        <p></p>
+        
+
+        <!-- 留言区 -->
+        <div class="row row-cols-1 row-cols-md-2 g-4" id="bodyDiv">
+            <!-- 条数统计 -->
+            
+
+            <!-- 样例 -->
+
+            <!-- <div class="card h-100">
+
+                <div class="card-body">
+                    <h3 class="score" style="display:inline-block">10分</h3>
+                    <h5 style="display:inline-block;margin-left: 60px;" id="recVal">0</h5>
+                    <h5 class="card-title">兰园滑蛋饭</h5>
+                    <p class="card-text">非常好吃，墙裂推荐！</p>
+                </div>
+                <div style="display:flex;">
+                    <button type="button" class="btn btn-lg btn-primary" id="recommend" style="width:50%" >赞一下👍</button>
+                    <button type="button" class="btn btn-lg btn-danger" id="down" style="width:50%">踩一下👎</button>
+                </div>
+
+                <div class="card-footer">
+                    <small class="text-muted">2022/10/25</small>
+                </div>
+            </div> -->
+            
+
+        </div>
+
+        
+    </div>
+
+        <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="./js/detail.js"></script>
+
+
+</body>
+
+</html>
