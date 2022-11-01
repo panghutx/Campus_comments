@@ -24,6 +24,7 @@ public class DiscussDao {
             sum  = resultSet.getInt(1);
 
         } catch (SQLException e) {
+            e.printStackTrace();
 
         }finally {
             DBUtil.close(connection,statement,resultSet);
@@ -159,6 +160,7 @@ public class DiscussDao {
     }
 
     //获取排行榜后五名
+    //上榜规则：分数小于5或者推荐值小于0
     public List<Discuss> down(){
         List<Discuss> discussList = new ArrayList<>();
         Connection connection =null;
@@ -166,7 +168,7 @@ public class DiscussDao {
         ResultSet resultSet = null;
         try {
             connection = DBUtil.getConnection();
-            String sql = "select title,recommend from food where score<5 order by recommend limit 5";
+            String sql = "select title,recommend from food where score<5 or recommend<0 order by recommend limit 5";
             statement = connection.prepareStatement(sql);
             resultSet = statement.executeQuery();
             while(resultSet.next()){
