@@ -1,3 +1,5 @@
+package command;
+
 import dao.DiscussDao;
 
 import javax.servlet.ServletException;

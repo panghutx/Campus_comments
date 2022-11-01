@@ -1,3 +1,5 @@
+package command;
+
 import com.fasterxml.jackson.databind.ObjectMapper;
 import dao.DiscussDao;
 

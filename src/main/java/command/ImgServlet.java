@@ -1,3 +1,5 @@
+package command;
+
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.sun.scenario.effect.impl.sw.java.JSWBlend_SRC_OUTPeer;
 import dao.Image;
