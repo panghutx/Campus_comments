@@ -88,7 +88,7 @@ function load() {
                         }
                     })
 
-                    location.reload();
+                    
                 }
 
                 down.onclick=function(){
@@ -105,7 +105,7 @@ function load() {
                         }
                     })
 
-                    location.reload();
+                    
                 }
 
             }

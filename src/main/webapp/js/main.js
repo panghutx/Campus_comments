@@ -93,8 +93,9 @@ function load() {
                             rec.innerHTML = '助力值：' + body.recommend;
                         }
                     })
+                    alert("感谢你的助力")
 
-                    location.reload();
+                    
                 }
 
                 down.onclick=function(){
@@ -111,8 +112,10 @@ function load() {
                         }
                     })
 
-                    location.reload();
+                    alert("感谢你的助力")
                 }
+
+                
 
             }
         }
